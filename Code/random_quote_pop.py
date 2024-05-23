@@ -25,7 +25,7 @@ def job():
     show_quote()
 
 def random_interval_job():
-    interval = random.randint(5, 10)  # Random interval between 5 to 15 minutes
+    interval = random.randint(5, 10)  # Random interval between 5 to 10 minutes
     schedule.every(interval).minutes.do(job)
 
 random_interval_job()
